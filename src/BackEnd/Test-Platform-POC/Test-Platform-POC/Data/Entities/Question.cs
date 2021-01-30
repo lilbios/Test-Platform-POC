@@ -1,8 +1,9 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Bson.Serialization.Attributes;
 using System;
+using System.Collections.Generic;
 
-namespace Test_Platform_POC.Data.Models
+namespace Test_Platform_POC.Data.Entities
 {
     public class Question
     {
@@ -11,7 +12,15 @@ namespace Test_Platform_POC.Data.Models
         public Guid Id { get; set; }
 
         public string QuizText { get; set; }
+        public string Hint { get; set; }
+
+        [BsonRepresentation(BsonType.DateTime)]
         public DateTime SpentTime { get; set; }
         public bool MultiplyCorrectAnswers { get; set; }
+        public double Mark { get; set; }
+
+        [BsonRepresentation(BsonType.Array)]
+        public ICollection<Answer> Answers { get; set; }
+
     }
 }

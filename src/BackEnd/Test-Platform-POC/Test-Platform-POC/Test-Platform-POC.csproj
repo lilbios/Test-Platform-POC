@@ -9,6 +9,17 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
+    <PackageReference Include="MongoDB.Driver" Version="2.11.6" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\" />
+    <Folder Include="Mappers\" />
+    <Folder Include="v1\Request\" />
+    <Folder Include="v1\Response\" />
+    <Folder Include="Services\" />
+    <Folder Include="Validators\" />
+    <Folder Include="Constants\" />
   </ItemGroup>
 
 
