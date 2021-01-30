@@ -2,7 +2,7 @@
 using MongoDB.Bson.Serialization.Attributes;
 using System;
 
-namespace Test_Platform_POC.Data.Entities
+namespace Test_Platform_POC.Domain.Models
 {
     public class Result
     {

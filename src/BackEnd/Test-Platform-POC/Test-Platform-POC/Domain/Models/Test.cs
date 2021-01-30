@@ -3,10 +3,15 @@ using MongoDB.Bson.Serialization.Attributes;
 using System;
 using System.Collections.Generic;
 
-namespace Test_Platform_POC.Data.Entities
+namespace Test_Platform_POC.Domain.Models
 {
     public class Test
     {
+        public Test()
+        {
+            Question = new List<Question>();
+        }
+
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public Guid Id { get; set; }
