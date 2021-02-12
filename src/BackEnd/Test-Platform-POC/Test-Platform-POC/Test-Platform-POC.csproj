@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
@@ -8,18 +8,23 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="v1\**" />
+    <Content Remove="v1\**" />
+    <EmbeddedResource Remove="v1\**" />
+    <None Remove="v1\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.3" />
     <PackageReference Include="Microsoft.VisualStudio.Azure.Containers.Tools.Targets" Version="1.10.9" />
     <PackageReference Include="MongoDB.Driver" Version="2.11.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Controllers\" />
-    <Folder Include="Mappers\" />
-    <Folder Include="v1\Request\" />
-    <Folder Include="v1\Response\" />
-    <Folder Include="Services\" />
-    <Folder Include="Validators\" />
-    <Folder Include="Constants\" />
+    <Folder Include="Data\Repositories\" />
   </ItemGroup>
 
 
