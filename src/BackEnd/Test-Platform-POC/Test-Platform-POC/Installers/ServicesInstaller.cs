@@ -1,6 +1,5 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using System;
 using Test_Platform_POC.Data;
 
 namespace Test_Platform_POC.Installers

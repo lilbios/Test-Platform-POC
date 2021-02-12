@@ -4,7 +4,7 @@ using System;
 
 namespace Test_Platform_POC.Installers
 {
-    public class AppDbContexInstaller : IInstaller
+    public class DbContexInstaller : IInstaller
     {
         public void AddService(IServiceCollection service, IConfiguration configuration)
         {
