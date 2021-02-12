@@ -8,9 +8,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controllers\**" />
     <Compile Remove="v1\**" />
+    <Content Remove="Controllers\**" />
     <Content Remove="v1\**" />
+    <EmbeddedResource Remove="Controllers\**" />
     <EmbeddedResource Remove="v1\**" />
+    <None Remove="Controllers\**" />
     <None Remove="v1\**" />
   </ItemGroup>
 
@@ -23,7 +27,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
     <Folder Include="Data\Repositories\" />
   </ItemGroup>
 
