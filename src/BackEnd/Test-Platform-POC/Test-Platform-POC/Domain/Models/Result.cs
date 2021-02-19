@@ -16,7 +16,7 @@ namespace Test_Platform_POC.Domain.Models
         [BsonRepresentation(BsonType.DateTime)]
         public DateTime TotalSpentTime { get; set; }
 
-        public User User { get; set; }
+        public AppUser User { get; set; }
         public Test Test { get; set; }
     }
 }
